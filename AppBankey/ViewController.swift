@@ -8,10 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private let bankeyView = BankeyView()
+    
+    override func loadView() {
+        self.view = bankeyView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
