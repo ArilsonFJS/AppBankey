@@ -63,6 +63,8 @@ extension LoginView {
     func style () {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .secondarySystemBackground
+        layer.cornerRadius = 5
+        clipsToBounds = true
     }
     
     func layout() {
