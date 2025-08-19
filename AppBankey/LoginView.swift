@@ -21,6 +21,7 @@ class LoginView: UIView {
         let passwordTextField = UITextField()
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.placeholder = "Password"
+        passwordTextField.isSecureTextEntry = true
         return passwordTextField
     }()
     
@@ -29,7 +30,6 @@ class LoginView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 8
-        stackView.alignment = .leading
         stackView.backgroundColor = .secondarySystemBackground
         return stackView
     }()
