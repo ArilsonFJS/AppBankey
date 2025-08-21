@@ -10,14 +10,14 @@ import UIKit
 
 class LoginView: UIView {
     
-    private lazy var userNameTextField: UITextField = {
+    lazy var userNameTextField: UITextField = {
         let userNameTextField = UITextField()
         userNameTextField.translatesAutoresizingMaskIntoConstraints = false
         userNameTextField.placeholder = "User Name"
         return userNameTextField
     }()
     
-    private lazy var passwordTextField: UITextField = {
+    lazy var passwordTextField: UITextField = {
         let passwordTextField = UITextField()
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.placeholder = "Password"

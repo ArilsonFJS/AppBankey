@@ -17,6 +17,26 @@ class LoginViewController: UIViewController {
         return signInButton
     }()
     
+    private lazy var errorMessageLabel: UILabel = {
+        let errorMessageLabel = UILabel()
+        errorMessageLabel.translatesAutoresizingMaskIntoConstraints = false
+        errorMessageLabel.text = "incorrect username / password"
+        errorMessageLabel.textAlignment = .center
+        errorMessageLabel.textColor = .systemRed
+        errorMessageLabel.numberOfLines = 0
+        errorMessageLabel.isHidden = false
+        return errorMessageLabel
+    }()
+    
+    
+    var userName: String? {
+        return loginView.userNameTextField.text
+    }
+    
+    var password: String? {
+        return loginView.passwordTextField.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -29,6 +49,7 @@ extension LoginViewController {
     private func layout() {
         view.addSubview(loginView)
         view.addSubview(signInButton)
+        view.addSubview(errorMessageLabel)
         
         //LoginView
         NSLayoutConstraint.activate([
@@ -43,6 +64,13 @@ extension LoginViewController {
             signInButton.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
             signInButton.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
             
+        ])
+        
+        //errorMessageLabel
+        NSLayoutConstraint.activate([
+            errorMessageLabel.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 10),
+            errorMessageLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+            errorMessageLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
         ])
     }
     
