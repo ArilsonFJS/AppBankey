@@ -95,21 +95,18 @@ extension LoginView {
 //MARK: - UITextFieldDelegate
 extension LoginView: UITextFieldDelegate {
     
+    //Chamado quando é pressionado o Enter do teclado para que seja fechado
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        userNameTextField.endEditing(true)
-        passwordTextField.endEditing(true)
+        textField.resignFirstResponder() // Fecha o teclado
         return true
     }
     
+    //Chamado antes do campo de texto terminar a edição
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField.text != "" {
-            return true
-        } else {
-            userNameTextField.placeholder = "Inform your user"
-            return false
-        }
+        return true
     }
     
+    //Chamado depois que o campo de texto efetivamente terminou a edição
     func textFieldDidEndEditing(_ textField: UITextField) {
         
     }
