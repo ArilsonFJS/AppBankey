@@ -25,6 +25,20 @@ class OnboardingViewController: UIViewController {
         return label
     }()
     
+    private let heroImage: String
+    private let titleText: String
+    
+    init(heroImage: String, titleText: String) {
+        self.heroImage = heroImage
+        self.titleText = titleText
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -36,16 +50,18 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController {
     
     func style(){
+        view.backgroundColor = .systemBackground
+        
         stackView.axis = .vertical
         stackView.spacing = 20
         
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "delorean")
+        imageView.image = UIImage(named: heroImage)
         
         label.textAlignment = .center
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
-        label.text = "Bankey is faster, easier to use, and has a brand new look and fell that will make you fell like you are back in 1989"
+        label.text = titleText
         label.font = UIFont.preferredFont(forTextStyle: .title3)
     }
     

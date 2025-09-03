@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         //window?.rootViewController = LoginViewController()
-        window?.rootViewController = OnboardingViewController() //OnboardingContainerViewController()
+        window?.rootViewController = OnboardingContainerViewController()
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
     }
