@@ -10,18 +10,20 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let loginViewController = LoginViewController()
+    let onboardingContainerViewController = OnboardingContainerViewController()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        //window?.rootViewController = LoginViewController()
-        window?.rootViewController = OnboardingContainerViewController()
+        loginViewController.delegate = self
+        onboardingContainerViewController.delegate = self
+        window?.rootViewController = loginViewController
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
@@ -52,4 +54,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
+extension SceneDelegate: LoginViewControllerDelegate, OnboardingContainerViewControllerDelegate {
+    
+    func didLogin() {
+        window?.rootViewController = onboardingContainerViewController
+    }
+    
+    func didFinishOnboarding() {
+        print("Close Buttton")
+    }
+}
+
 
