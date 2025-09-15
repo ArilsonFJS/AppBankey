@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B49249802E78B51800A85D31 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492497F2E78B51800A85D31 /* DummyViewController.swift */; };
 		B4AFD0C02E5A5CA6003E42F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AFD0BA2E5A5CA6003E42F4 /* Assets.xcassets */; };
 		B4AFD0C22E5A5CA6003E42F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AFD0BD2E5A5CA6003E42F4 /* LaunchScreen.storyboard */; };
 		B4AFD0C32E5A5CA6003E42F4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFD0B52E5A5CA6003E42F4 /* LoginView.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B4854EA42E4D266D00B49837 /* AppBankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B492497F2E78B51800A85D31 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		B4AFD0B52E5A5CA6003E42F4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B4AFD0B62E5A5CA6003E42F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4AFD0B92E5A5CA6003E42F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				B4AFD0B52E5A5CA6003E42F4 /* LoginView.swift */,
 				B4AFD0B62E5A5CA6003E42F4 /* LoginViewController.swift */,
+				B492497F2E78B51800A85D31 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49249802E78B51800A85D31 /* DummyViewController.swift in Sources */,
 				B4AFD0C32E5A5CA6003E42F4 /* LoginView.swift in Sources */,
 				B4D10BEB2E68F44200190D2F /* OnboardingViewController.swift in Sources */,
 				B4AFD0C42E5A5CA6003E42F4 /* LoginViewController.swift in Sources */,
