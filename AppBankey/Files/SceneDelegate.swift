@@ -13,6 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
     let dummyViewController = DummyViewController()
+    
+    var hasOnBoarded = false
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -51,10 +53,16 @@ extension SceneDelegate: LoginViewControllerDelegate, OnboardingContainerViewCon
     
     
     func didLogin() {
-        setRootViewController(onboardingContainerViewController)
+        if hasOnBoarded {
+            setRootViewController(dummyViewController)
+        } else {
+            setRootViewController(onboardingContainerViewController)
+        }
+        
     }
     
     func didFinishOnboarding() {
+        hasOnBoarded =  true
         setRootViewController(dummyViewController)
     }
 }
