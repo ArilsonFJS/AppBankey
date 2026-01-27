@@ -1,0 +1,39 @@
+
+# macOS
+.DS_Store
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+*.hmap
+
+# App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.swiftpm
+.build/
+# Mantém Package.resolved no repo
+# Package.resolved
+
+# CocoaPods
+Pods/
+
+# Xcode workspace (se usa CocoaPods, mantenha no Git)
+# *.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
