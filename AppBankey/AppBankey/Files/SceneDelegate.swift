@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let loginViewController = LoginViewController()
     let dummyViewController = DummyViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
+    let onboardingViewContrller = OnboardingViewController()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -23,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         dummyViewController.delegate = self
         
         //window?.rootViewController = loginViewController
-        window?.rootViewController = onboardingContainerViewController
+        window?.rootViewController = onboardingViewContrller
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
     }

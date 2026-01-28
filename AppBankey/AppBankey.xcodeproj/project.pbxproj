@@ -16,6 +16,7 @@
 		B4AFD0C42E5A5CA6003E42F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFD0B62E5A5CA6003E42F4 /* LoginViewController.swift */; };
 		B4AFD0C52E5A5CA6003E42F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFD0B92E5A5CA6003E42F4 /* AppDelegate.swift */; };
 		B4AFD0C62E5A5CA6003E42F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AFD0BE2E5A5CA6003E42F4 /* SceneDelegate.swift */; };
+		B4D60F7F2F2A6BA9001E5B97 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D60F7E2F2A6BA9001E5B97 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B4AFD0BB2E5A5CA6003E42F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4AFD0BC2E5A5CA6003E42F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4AFD0BE2E5A5CA6003E42F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4D60F7E2F2A6BA9001E5B97 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				B439E9ED2F1FE6E000EAC875 /* OnboardingContainerViewController.swift */,
+				B4D60F7E2F2A6BA9001E5B97 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				B49249802E78B51800A85D31 /* DummyViewController.swift in Sources */,
 				B4AFD0C32E5A5CA6003E42F4 /* LoginView.swift in Sources */,
 				B4AFD0C42E5A5CA6003E42F4 /* LoginViewController.swift in Sources */,
+				B4D60F7F2F2A6BA9001E5B97 /* OnboardingViewController.swift in Sources */,
 				B4AFD0C52E5A5CA6003E42F4 /* AppDelegate.swift in Sources */,
 				B4AFD0C62E5A5CA6003E42F4 /* SceneDelegate.swift in Sources */,
 				B49249832E7A0AEF00A85D31 /* LocalState.swift in Sources */,

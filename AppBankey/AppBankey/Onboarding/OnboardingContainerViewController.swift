@@ -98,7 +98,7 @@ extension OnboardingContainerViewController: UIPageViewControllerDataSource {
 class viewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemRed 
     }
 }
 
