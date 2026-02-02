@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let loginViewController = LoginViewController()
     let dummyViewController = DummyViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
-    let onboardingViewContrller = OnboardingViewController()
+    let onboardingViewContrller = OnboardingViewController(heroImage: "delorean", titleText: "Bankey is faster, easier to use, and has brand new look and feel that will make you feel like you are back in 1989")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }

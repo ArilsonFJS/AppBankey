@@ -32,6 +32,18 @@ class OnboardingViewController: UIViewController {
         style()
         layout()
     }
+    
+    required init?(heroImage: String, titleText: String) {
+        super.init(nibName: nil, bundle: nil)
+        
+        self.imageView.image = UIImage(named: heroImage)
+        self.label.text = titleText
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 extension OnboardingViewController {
@@ -40,9 +52,7 @@ extension OnboardingViewController {
         stackView.spacing = 20
         
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "delorean")
-        
-        label.text = "Bankey is faster, easier to use, and has brand new look and feel that will make you feel like you are back in 1989"
+       
         label.font = UIFont.preferredFont(forTextStyle: .title3)
         label.textAlignment = .center
         label.adjustsFontForContentSizeCategory = true
