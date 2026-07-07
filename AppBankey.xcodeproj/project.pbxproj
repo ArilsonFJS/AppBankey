@@ -15,6 +15,7 @@
 		B46A3E732F9300820033B6F8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E722F93007B0033B6F8 /* LoginView.swift */; };
 		B46A3E762F9303A50033B6F8 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E752F9303930033B6F8 /* OnboardingContainerViewController.swift */; };
 		B46A3E782F9303BF0033B6F8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E772F9303B60033B6F8 /* OnboardingViewController.swift */; };
+		B4A537D02FFD8D0F0009EE54 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A537CF2FFD8D0F0009EE54 /* DummyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B46A3E722F93007B0033B6F8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B46A3E752F9303930033B6F8 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		B46A3E772F9303B60033B6F8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B4A537CF2FFD8D0F0009EE54 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				B46A3E722F93007B0033B6F8 /* LoginView.swift */,
 				B46A3E672F92FFC00033B6F8 /* LoginViewController.swift */,
+				B4A537CF2FFD8D0F0009EE54 /* DummyViewController.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A537D02FFD8D0F0009EE54 /* DummyViewController.swift in Sources */,
 				B46A3E692F92FFC00033B6F8 /* AppDelegate.swift in Sources */,
 				B46A3E782F9303BF0033B6F8 /* OnboardingViewController.swift in Sources */,
 				B46A3E6A2F92FFC00033B6F8 /* SceneDelegate.swift in Sources */,

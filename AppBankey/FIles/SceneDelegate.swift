@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
+    let dummyViewController = DummyViewController()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -23,27 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
+        dummyViewController.logoutDelegate = self
         
         window?.rootViewController = loginViewController
     }
 
-}
-
-extension SceneDelegate: LoginViewControllerDelegate  {
-
-    func didLogin() {
-        print("Login feito")
-        setRootViewController(onboardingContainerViewController)
-    }
-    
-    
-}
-
-extension SceneDelegate: OnboardingContainerViewControllerDelegate {
-    
-    func didFinishOnboarding() {
-        print("LOG - SCENE DELEGATE CLOSE")
-    }
 }
 
 extension SceneDelegate {
@@ -58,5 +43,25 @@ extension SceneDelegate {
         window.rootViewController = vc
         window.makeKeyAndVisible()
         UIView.transition(with: window,  duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+}
+
+extension SceneDelegate: LoginViewControllerDelegate  {
+
+    func didLogin() {
+        setRootViewController(onboardingContainerViewController)
+    }
+}
+
+extension SceneDelegate: OnboardingContainerViewControllerDelegate {
+    
+    func didFinishOnboarding() {
+        setRootViewController(dummyViewController)
+    }
+}
+
+extension SceneDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginViewController)
     }
 }
