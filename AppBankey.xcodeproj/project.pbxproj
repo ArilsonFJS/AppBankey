@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B423FAA3301B9FF3001C5F8E /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FAA2301B9FF3001C5F8E /* AccountSummaryViewController.swift */; };
+		B423FAA5301BA833001C5F8E /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FAA4301BA833001C5F8E /* AccountSummaryHeaderView.swift */; };
 		B46A3E692F92FFC00033B6F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E612F92FFC00033B6F8 /* AppDelegate.swift */; };
 		B46A3E6A2F92FFC00033B6F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E662F92FFC00033B6F8 /* SceneDelegate.swift */; };
 		B46A3E6B2F92FFC00033B6F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E672F92FFC00033B6F8 /* LoginViewController.swift */; };
@@ -20,10 +21,12 @@
 		B48B9AEC3013DA3C0014788B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B9AEB3013DA3C0014788B /* MainViewController.swift */; };
 		B4A537D02FFD8D0F0009EE54 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A537CF2FFD8D0F0009EE54 /* DummyViewController.swift */; };
 		B4D4FC6C30100D6A00B2AF61 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4FC6B30100D6A00B2AF61 /* LocalState.swift */; };
+		B4FCA6C130229D8800B9470B /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4FCA6C030229D8800B9470B /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B423FAA2301B9FF3001C5F8E /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		B423FAA4301BA833001C5F8E /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		B46A3E442F92FF320033B6F8 /* AppBankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46A3E612F92FFC00033B6F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46A3E622F92FFC00033B6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B48B9AEB3013DA3C0014788B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B4A537CF2FFD8D0F0009EE54 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		B4D4FC6B30100D6A00B2AF61 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		B4FCA6C030229D8800B9470B /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				B423FAA2301B9FF3001C5F8E /* AccountSummaryViewController.swift */,
+				B423FAA4301BA833001C5F8E /* AccountSummaryHeaderView.swift */,
+				B4FCA6C030229D8800B9470B /* AccountSummaryHeaderView.xib */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FCA6C130229D8800B9470B /* AccountSummaryHeaderView.xib in Resources */,
 				B46A3E6C2F92FFC00033B6F8 /* Assets.xcassets in Resources */,
 				B46A3E6E2F92FFC00033B6F8 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -201,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B423FAA5301BA833001C5F8E /* AccountSummaryHeaderView.swift in Sources */,
 				B4A537D02FFD8D0F0009EE54 /* DummyViewController.swift in Sources */,
 				B46A3E692F92FFC00033B6F8 /* AppDelegate.swift in Sources */,
 				B48B9AEA3013D77E0014788B /* UIViewController+Utils.swift in Sources */,
