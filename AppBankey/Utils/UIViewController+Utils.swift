@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    func statusBar() {
+    func setStatusBar() {
         let navBarAppearance = UINavigationBarAppearance ()
         navBarAppearance.configureWithTransparentBackground ( ) // para ocultar também a linha da barra de navegação
         navBarAppearance.backgroundColor = appColor

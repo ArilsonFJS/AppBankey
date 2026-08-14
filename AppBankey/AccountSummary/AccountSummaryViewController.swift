@@ -36,6 +36,7 @@ extension AccountSummaryViewController {
     }
     
     private func setupTable(){
+        tableView.backgroundColor = appColor
         tableView.delegate = self
         tableView.dataSource = self
         
