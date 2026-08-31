@@ -11,6 +11,7 @@
 		B4116246302E7B9700A32F09 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4116245302E7B9700A32F09 /* CurrencyFormatter.swift */; };
 		B423FAA3301B9FF3001C5F8E /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FAA2301B9FF3001C5F8E /* AccountSummaryViewController.swift */; };
 		B423FAA5301BA833001C5F8E /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423FAA4301BA833001C5F8E /* AccountSummaryHeaderView.swift */; };
+		B464EB85303F24960074603F /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464EB84303F24960074603F /* PasswordValidator.swift */; };
 		B46A3E692F92FFC00033B6F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E612F92FFC00033B6F8 /* AppDelegate.swift */; };
 		B46A3E6A2F92FFC00033B6F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E662F92FFC00033B6F8 /* SceneDelegate.swift */; };
 		B46A3E6B2F92FFC00033B6F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A3E672F92FFC00033B6F8 /* LoginViewController.swift */; };
@@ -43,6 +44,7 @@
 		B423FAA2301B9FF3001C5F8E /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		B423FAA4301BA833001C5F8E /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		B441E4E63037424F008A7DE1 /* AppBankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppBankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B464EB84303F24960074603F /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		B46A3E442F92FF320033B6F8 /* AppBankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46A3E612F92FFC00033B6F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46A3E622F92FFC00033B6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				B46A3E722F93007B0033B6F8 /* LoginView.swift */,
 				B46A3E672F92FFC00033B6F8 /* LoginViewController.swift */,
 				B4A537CF2FFD8D0F0009EE54 /* DummyViewController.swift */,
+				B464EB84303F24960074603F /* PasswordValidator.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				B4116244302E7AA900A32F09 /* DecimalUtils.swift in Sources */,
 				B46A3E732F9300820033B6F8 /* LoginView.swift in Sources */,
 				B46A3E762F9303A50033B6F8 /* OnboardingContainerViewController.swift in Sources */,
+				B464EB85303F24960074603F /* PasswordValidator.swift in Sources */,
 				B46A3E6B2F92FFC00033B6F8 /* LoginViewController.swift in Sources */,
 				B423FAA3301B9FF3001C5F8E /* AccountSummaryViewController.swift in Sources */,
 				B4D4FC6C30100D6A00B2AF61 /* LocalState.swift in Sources */,

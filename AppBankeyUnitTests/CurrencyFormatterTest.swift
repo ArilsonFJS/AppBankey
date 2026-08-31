@@ -19,6 +19,11 @@ class Test: XCTestCase {
         formatter = CurrencyFormatter()
     }
     
+    override func tearDown() {
+        formatter = nil
+        super.tearDown()
+    }
+    
     func testBreakDollarsIntoCents() throws {
         let result = formatter.breakIntoDollarsAndCents(929466.23)
         XCTAssertEqual(result.0, "929,466")
